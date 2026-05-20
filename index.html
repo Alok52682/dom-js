@@ -21,7 +21,30 @@
         </ul>
     </main>
     <script>
-        console.log('hello')
+        // console.log('hello')
+        const student = {
+            name: "Alex",
+            id: 30,
+            city: "Dhaka",
+            occupation: "Developer",
+            study: function (subject) {
+                console.log('studing on: ', subject);
+            },
+            skills: ["JavaScript", "HTML", "CSS"],
+            email: "alex@example.com"
+        };
+
+        const licollection = document.getElementsByTagName('li')
+        console.log(licollection);
+
+        for (const li of licollection) {
+            console.log(li.innerText);
+        }
+
+        const allHeadings = document.getElementsByTagName('h1')
+        for (const heading of allHeadings) {
+            console.log(heading);
+        }
     </script>
     <script src="scripts/script.js"></script>
 </body>
