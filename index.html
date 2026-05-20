@@ -13,12 +13,34 @@
         <h1>This is header section with no banner</h1>
     </header>
     <main>
-        <h1>WELLCOME TO DOM</h1>
-        <ul>
-            <li>tuntuni</li>
-            <li>putturi</li>
-            <li>lengtu</li>
-        </ul>
+        <section id="top" class="name">
+            <h1>WELLCOME TO DOM</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur nisi veniam deserunt sequi
+                provident impedit deleniti possimus quas! A, quasi? Vitae corrupti consectetur amet accusamus inventore
+                voluptatum, magni eveniet maiores earum, suscipit molestias, exercitationem quibusdam voluptatibus
+                pariatur laboriosam illum <span class="text-fraction">tempore minus</span> asperiores delectus eum enim
+                sed. Dolores corrupti et, tempora
+                vitae ipsum, nostrum consequatur ipsa similique obcaecati sed illum officia quidem? Autem quod non
+                expedita dolore sit nam velit? Laborum rerum illo molestiae aut dicta corrupti qui maxime dolores ullam
+                reiciendis <span>asperiores aliquid</span> blanditiis esse labore vitae, temporibus dolore accusamus
+                ipsam similique
+                neque ducimus necessitatibus, id vel distinctio? Veritatis.</p>
+            <ul>
+                <li class="foreign">tuntuni</li>
+                <li class="foreign">putturi</li>
+                <li>bandor</li>
+                <li class="foreign">lengtu</li>
+            </ul>
+        </section>
+        <section id="Fruit_section">
+            <h1>Fruits I love the most</h1>
+            <ul>
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Apple</li>
+                <li>Pineapple</li>
+            </ul>
+        </section>
     </main>
     <script>
         // console.log('hello')
@@ -34,6 +56,11 @@
             email: "alex@example.com"
         };
 
+        const spans = document.querySelectorAll('#top span')
+        for (span of spans) {
+            console.log(span.innerText)
+        }
+
         const licollection = document.getElementsByTagName('li')
         console.log(licollection);
 
@@ -45,6 +72,15 @@
         for (const heading of allHeadings) {
             console.log(heading);
         }
+
+        const bonobashi = document.getElementsByClassName('foreign')
+        console.log(bonobashi);
+        for (const bon of bonobashi) {
+            console.log(bon)
+        }
+
+        const foodSection = document.getElementById('Fruit_section')
+        console.log(foodSection.querySelector('h1').innerText)
     </script>
     <script src="scripts/script.js"></script>
 </body>
